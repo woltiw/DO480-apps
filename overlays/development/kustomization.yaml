@@ -5,3 +5,4 @@ bases:
 
 resources:
 - dbclaim-pvc.yaml
+namePrefix: dev-
