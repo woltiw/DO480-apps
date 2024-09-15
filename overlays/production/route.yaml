@@ -7,10 +7,10 @@ metadata:
   name: frontend
   namespace: mysql
 spec:
-  host: todo.apps.ocp4.example.com
+  host: prod-todo.apps.ocp4.example.com
   path: "/todo"
   to:
     kind: Service
-    name: frontend
+    name: prod-frontend
     weight: 100
   wildcardPolicy: None
