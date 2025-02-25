@@ -10,5 +10,5 @@ spec:
   path: "/todo" 
   to:
      kind: Service 
-     name: prod-frontend
+     name: dev-frontend
      weight: 100
