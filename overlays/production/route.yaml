@@ -1,0 +1,15 @@
+apiVersion: route.openshift.io/v1
+kind: route
+metadata:
+  labels:
+    app: todonodejs
+    name: route-frontend
+  name: frontend
+  namespace: mysql
+spec:
+  host: prod-todo.apps.ocp4.example.com
+  path: "/todo" 
+  to:
+    kind: service
+    name: prod-frontend
+    weight: 100  
